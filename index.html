@@ -1010,31 +1010,31 @@
       <span class="section-tag">✦ &nbsp; Appointment Form</span>
       <div class="form-group">
         <label>Full Name</label>
-        <input type="text" id="f-name" placeholder="Your beautiful name..." required>
+        <input type="text" id="f-name" name="name" placeholder="Your beautiful name..." required>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>Phone Number</label>
-          <input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX">
+          <input type="tel" id="f-phone" name="phone" placeholder="+91 XXXXX XXXXX">
         </div>
         <div class="form-group">
           <label>Email Address</label>
-          <input type="email" id="f-email" placeholder="your@email.com">
+          <input type="email" id="f-email" name="email" placeholder="your@email.com">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>Preferred Date</label>
-          <input type="date" id="f-date">
+          <input type="date" id="f-date" name="date">
         </div>
         <div class="form-group">
           <label>Preferred Time</label>
-          <input type="time" id="f-time">
+          <input type="time" id="f-time" name="time">
         </div>
       </div>
       <div class="form-group">
         <label>Service Required</label>
-        <select id="f-service">
+        <select id="f-service" name="service">
           <option value="">— Select a service —</option>
           <option>Bridal Full Hands</option>
           <option>Bridal Feet & Legs</option>
@@ -1053,7 +1053,7 @@
         <label>Additional Notes</label>
         <textarea id="f-notes" placeholder="Tell us about your occasion, design preferences, or any special requirements..."></textarea>
       </div>
-      <button class="form-submit" onclick="submitBooking()"><span>✦ &nbsp; Confirm Booking Request &nbsp; ✦</span></button>
+      <button type="submit" class="form-submit"> <span>✦ &nbsp; Confirm Booking Request &nbsp; ✦</span></button>
       <div class="form-message" id="formMsg"></div>
     </div>
   </div>
